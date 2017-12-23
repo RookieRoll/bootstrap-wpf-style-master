@@ -57,6 +57,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Components\LoadingPage.xaml.cs">
+      <DependentUpon>LoadingPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SampleData\SampleDataSource\SampleDataSource.xaml.cs">
       <DependentUpon>SampleDataSource.xaml</DependentUpon>
     </Compile>
@@ -87,6 +90,9 @@
     <Compile Include="Win_InputGroup.xaml.cs">
       <DependentUpon>Win_InputGroup.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Win_Loading.xaml.cs">
+      <DependentUpon>Win_Loading.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Win_Panel.xaml.cs">
       <DependentUpon>Win_Panel.xaml</DependentUpon>
     </Compile>
@@ -102,6 +108,10 @@
     <Compile Include="Win_TextBox.xaml.cs">
       <DependentUpon>Win_TextBox.xaml</DependentUpon>
     </Compile>
+    <Page Include="Components\LoadingPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -214,6 +224,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Win_Loading.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Win_Panel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -269,6 +283,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\glyphicons-halflings-regular.svg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
